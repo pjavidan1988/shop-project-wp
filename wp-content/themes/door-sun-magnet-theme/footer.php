@@ -72,3 +72,4 @@
 <script src="<?php echo DS_TDU ?>/js/bootstrap.min.js"></script>
 <script src="<?php echo DS_TDU ?>/js/bootstrap-select.js"></script>
 <script src="<?php echo DS_TDU ?>/js/index.js"></script>
+<?php  wp_footer(); ?>

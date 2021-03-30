@@ -2,12 +2,13 @@
 <html lang="fa">
 <head>
     <meta charset="UTF-8">
-    <title>Doorsun Magnet</title>
+
     <link rel="stylesheet" href="<?php echo DS_TDU ?>/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?php echo DS_TDU ?>/css/font-awesome.min.css">
     <link rel="stylesheet" href="<?php echo DS_TDU ?>/css/bootstrap-select.css">
     <link rel="stylesheet" href="<?php echo DS_TDU ?>/style.css">
     <link rel="stylesheet" href="<?php echo DS_TDU ?>/css/responsive.css">
+	<?php wp_head();  ?>
 </head>
 <body>
 <header>
