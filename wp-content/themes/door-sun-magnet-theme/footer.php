@@ -67,9 +67,9 @@
 
 <!--Footer End-->
 
-<script src="<?php echo DS_TDU ?>/js/jquery-1.12.2.min.js"></script>
-<script src="<?php echo DS_TDU ?>/js/jquery.simple.timer.js"></script>
-<script src="<?php echo DS_TDU ?>/js/bootstrap.min.js"></script>
-<script src="<?php echo DS_TDU ?>/js/bootstrap-select.js"></script>
-<script src="<?php echo DS_TDU ?>/js/index.js"></script>
+
 <?php  wp_footer(); ?>
+
+</body>
+
+</html>

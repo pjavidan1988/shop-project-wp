@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1627bfc0-c08f-46eb-bad1-2b53c1d901d4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Doorsun Magnet Website Project.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="1627bfc0-c08f-46eb-bad1-2b53c1d901d4" name="Default Changelist" comment="update fun, header, footer">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/door-sun-magnet-theme/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/door-sun-magnet-theme/footer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/door-sun-magnet-theme/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/door-sun-magnet-theme/functions.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/door-sun-magnet-theme/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/door-sun-magnet-theme/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/door-sun-magnet-theme/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/door-sun-magnet-theme/js/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +39,12 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\Doorsun Magnet Website Project\wp-content\themes\door-sun-magnet-theme\js" />
+      <recent name="C:\wamp64\www\Doorsun Magnet Website Project\wp-content\themes\door-sun-magnet-theme\css" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -54,7 +55,8 @@
       <updated>1617027690972</updated>
       <workItem from="1617027694181" duration="1015000" />
       <workItem from="1617082276471" duration="136000" />
-      <workItem from="1617082420788" duration="1390000" />
+      <workItem from="1617082420788" duration="8943000" />
+      <workItem from="1617109520609" duration="628000" />
     </task>
     <servers />
   </component>
@@ -71,9 +73,12 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="update fun, header, footer" />
+    <option name="LAST_COMMIT_MESSAGE" value="update fun, header, footer" />
   </component>
   <component name="WordPressConfiguration" enabled="true">
     <wordpressPath>C:\wamp64\www\Doorsun Magnet Website Project</wordpressPath>
