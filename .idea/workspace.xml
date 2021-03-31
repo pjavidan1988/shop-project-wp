@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1627bfc0-c08f-46eb-bad1-2b53c1d901d4" name="Default Changelist" comment="update fun, header, footer">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/door-sun-magnet-theme/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/door-sun-magnet-theme/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/door-sun-magnet-theme/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/door-sun-magnet-theme/functions.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +54,7 @@
       <workItem from="1617082276471" duration="136000" />
       <workItem from="1617082420788" duration="8943000" />
       <workItem from="1617109520609" duration="955000" />
-      <workItem from="1617169741456" duration="3704000" />
+      <workItem from="1617169741456" duration="5095000" />
     </task>
     <servers />
   </component>

@@ -32,3 +32,18 @@ function doorSunScripts()
 }
 add_action('wp_enqueue_scripts','doorSunScripts');
 
+
+
+function doorSunWidgetsInit()
+{
+	register_sidebar(array(
+		'name'=>'فوتر',
+		'id'=>'wg_footer',
+		'before_widget'=>'<div class="col-md-3">',
+		'after_widget'=>'</div>',
+		'before_title'=>'<h4>',
+		'after_title'=>'</h4>',
+
+	));
+}
+add_action('widgets_init', 'doorSunWidgetsInit');

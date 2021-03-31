@@ -17,46 +17,7 @@
     <div class="footer-content">
         <div class="container">
             <div class="row">
-                <div class="col-md-3">
-                    <h4>اطلاعات عمومی</h4>
-                    <ul>
-                        <li><a href="#">درباره ما</a></li>
-                        <li><a href="#">اطلاعات حمل و نقل</a></li>
-                        <li><a href="#">حریم خصوصی</a></li>
-                        <li><a href="#">قوانین و مقررات</a></li>
-                        <li><a href="#">برندها</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <h4>اطلاعات عمومی</h4>
-                    <ul>
-                        <li><a href="#">درباره ما</a></li>
-                        <li><a href="#">اطلاعات حمل و نقل</a></li>
-                        <li><a href="#">حریم خصوصی</a></li>
-                        <li><a href="#">قوانین و مقررات</a></li>
-                        <li><a href="#">برندها</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <h4>اطلاعات عمومی</h4>
-                    <ul>
-                        <li><a href="#">درباره ما</a></li>
-                        <li><a href="#">اطلاعات حمل و نقل</a></li>
-                        <li><a href="#">حریم خصوصی</a></li>
-                        <li><a href="#">قوانین و مقررات</a></li>
-                        <li><a href="#">برندها</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <h4>اطلاعات عمومی</h4>
-                    <ul>
-                        <li><a href="#">درباره ما</a></li>
-                        <li><a href="#">اطلاعات حمل و نقل</a></li>
-                        <li><a href="#">حریم خصوصی</a></li>
-                        <li><a href="#">قوانین و مقررات</a></li>
-                        <li><a href="#">برندها</a></li>
-                    </ul>
-                </div>
+                <?php dynamic_sidebar('wg_footer'); ?>
             </div>
         </div>
     </div>
