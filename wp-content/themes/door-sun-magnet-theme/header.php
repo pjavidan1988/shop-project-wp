@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-	<?php wp_head();  ?>
+	<?php wp_head(); ?>
 </head>
 <body>
 <header>
@@ -17,12 +17,13 @@
                     </ul>
                 </div>
                 <div class="col-md-6">
-                    <ul>
-                        <li><a href="#">حساب کاربری</a></li>
-                        <li><a href="#">درباره ما</a></li>
-                        <li><a href="#">فرصا ت های شغلی</a></li>
-                        <li><a href="#">ارتباط با ما</a></li>
-                    </ul>
+					<?php
+                    $args=array(
+                            'theme_location'=>'top',
+                            'depth'=>1
+                    );
+					wp_nav_menu($args)
+					?>
                 </div>
             </div>
         </div>
@@ -36,20 +37,13 @@
             <div class="row">
                 <a href="#" class="logo"><img src="<?php echo DS_TDU ?>/images/logo1.png" width="127" alt="logo"></a>
                 <nav>
-                    <ul>
-                        <li><a href="#">صفحه اصلی</a></li>
-                        <li><a href="#">محصولات</a>
-                            <ul class="shadow-around">
-                                <li><a href="#">لپ تاپ و کتابخوان</a></li>
-                                <li><a href="#">لوازم اداری</a></li>
-                                <li><a href="#">دوربین دیجیتالی</a></li>
-                                <li><a href="#">کامپیوتر و تجهیزات اداری</a></li>
-                                <li><a href="#">صوتی و تصویری</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">فروش ویژه</a></li>
-                        <li><a href="#">محصولات ویژه</a></li>
-                    </ul>
+	                <?php
+	                $args=array(
+		                'theme_location'=>'main',
+		                'depth'=>2
+	                );
+	                wp_nav_menu($args)
+	                ?>
                     <a href="#" class="open-cart"></a>
                     <div class="table-responsive cart">
                         <table class="table shadow-around">
