@@ -13,7 +13,10 @@
             <div class="row">
                 <div class="col-md-6">
                     <ul class="pull-left">
-                        <li><a href="#"> شماره تماس : ۴۴۸۳۹۶۱۹-۰۱۳</a></li>
+                        <?php
+                        $header_options=doorSun_get_option('header_sec');
+                        ?>
+                        <li><a href="#"><?php echo $header_options[0]['top_text']; ?> </a></li>
                     </ul>
                 </div>
                 <div class="col-md-6">
@@ -35,7 +38,7 @@
     <div class="header-main">
         <div class="container">
             <div class="row">
-                <a href="#" class="logo"><img src="<?php echo DS_TDU ?>/images/logo1.png" width="127" alt="logo"></a>
+                <a href="#" class="logo"><img src="<?php echo $header_options[0]['logo']; ?> " width="127" alt="logo"></a>
                 <nav>
 	                <?php
 	                $args=array(
