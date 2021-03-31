@@ -47,3 +47,5 @@ function doorSunWidgetsInit()
 	));
 }
 add_action('widgets_init', 'doorSunWidgetsInit');
+require_once dirname( __FILE__ ) . '/cmb2/init.php';
+require_once dirname( __FILE__ ) . '/functions/cmb2-options.php';
