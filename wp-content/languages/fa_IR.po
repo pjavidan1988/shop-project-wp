@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.7.x - Development package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-03-22 11:22:32+0000\n"
+"PO-Revision-Date: 2021-03-31 18:14:01+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -2393,9 +2393,9 @@ msgid "Sorry, you are not allowed to delete revisions of this post."
 msgstr "با عرض پوزش، شما مجاز به حذف رونوشت‌های این نوشته نیستید."
 
 #. translators: %s: Custom field key.
-#: wp-includes/rest-api/fields/class-wp-rest-meta-fields.php:320
-#: wp-includes/rest-api/fields/class-wp-rest-meta-fields.php:334
-#: wp-includes/rest-api/fields/class-wp-rest-meta-fields.php:384
+#: wp-includes/rest-api/fields/class-wp-rest-meta-fields.php:324
+#: wp-includes/rest-api/fields/class-wp-rest-meta-fields.php:338
+#: wp-includes/rest-api/fields/class-wp-rest-meta-fields.php:388
 msgid "Could not update the meta value of %s in database."
 msgstr "مقدار متای %s در پایگاه‌داده نمی‌تواند به روزرسانی شود."
 
@@ -5729,8 +5729,8 @@ msgstr "دربارهٔ این سایت"
 
 #. translators: %s: Custom field key.
 #: wp-includes/rest-api/fields/class-wp-rest-meta-fields.php:227
-#: wp-includes/rest-api/fields/class-wp-rest-meta-fields.php:269
-#: wp-includes/rest-api/fields/class-wp-rest-meta-fields.php:364
+#: wp-includes/rest-api/fields/class-wp-rest-meta-fields.php:273
+#: wp-includes/rest-api/fields/class-wp-rest-meta-fields.php:368
 msgid "Sorry, you are not allowed to edit the %s custom field."
 msgstr "با عرض پوزش، شما مجاز به ویرایش فیلد سفارشی %s نیستید. "
 
@@ -6054,11 +6054,11 @@ msgstr "%1$s از نوع %2$s نیست."
 msgid "%1$s is not one of %2$s."
 msgstr "%1$s یکی از %2$s نیست."
 
-#: wp-includes/rest-api/fields/class-wp-rest-meta-fields.php:501
+#: wp-includes/rest-api/fields/class-wp-rest-meta-fields.php:505
 msgid "Meta fields."
 msgstr "زمینه‌های متا."
 
-#: wp-includes/rest-api/fields/class-wp-rest-meta-fields.php:238
+#: wp-includes/rest-api/fields/class-wp-rest-meta-fields.php:242
 msgid "Could not delete meta value from database."
 msgstr "نمی توانید مقدار متا را از پایگاه داده حذف نمایید."
 
@@ -11660,7 +11660,7 @@ msgstr "ویرایش سایت"
 #: wp-admin/js/inline-edit-post.js:330 wp-admin/js/tags-box.js:9
 msgctxt "tag delimiter"
 msgid ","
-msgstr "،"
+msgstr ","
 
 #: wp-includes/class-wp-xmlrpc-server.php:1951
 #: wp-includes/class-wp-xmlrpc-server.php:4512

@@ -1,37 +1,31 @@
 <!-- Services Start -->
-
-<section id="services">
-    <div class="services shadow-bottom">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3"><i class="fa fa-plane"></i>
-                    <div class="content">
-                        <h4>ارسال رایگان</h4>
-                        <p>ارسال رایگان خرید بالای ۱۰۰ هزار تومان </p>
-                    </div>
-                </div>
-                <div class="col-md-3"><i class="fa fa-undo"></i>
-                    <div class="content">
-                        <h4>ضمانت بازگشت محصول</h4>
-                        <p>فرصت ۱۴ روزه</p>
-                    </div>
-                </div>
-                <div class="col-md-3"><i class="fa fa-credit-card"></i>
-                    <div class="content">
-                        <h4>امکان پرداخت در محل</h4>
-                        <p>نقدی یا کارت بانکی</p>
-                    </div>
-                </div>
-                <div class="col-md-3"><i class="fa fa-shield"></i>
-                    <div class="content">
-                        <h4>تضمین اصالت کالا</h4>
-                        <p>گارانتی ضمانت</p>
-                    </div>
+<?php
+$doorsun_services = doorSun_get_option( "doorsun_service_group" );
+if ( is_array( $doorsun_services ) ) :
+	?>
+    <section id="services">
+        <div class="services shadow-bottom">
+            <div class="container">
+                <div class="row">
+					<?php
+					foreach ( $doorsun_services as $i => $service_item ) {
+						?>
+                        <div class="col-md-3">
+                            <i class="fa <?php echo $service_item['fa_icon']; ?>"></i>
+                            <div class="content">
+                                <h4><?php echo $service_item['title']; ?></h4>
+                                <p><?php echo $service_item['subtitle']; ?></p>
+                            </div>
+                        </div>
+						<?php
+					}
+					?>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-<div class="clearfix"></div>
-
+    </section>
+    <div class="clearfix"></div>
+<?php
+endif;
+?>
 <!-- Services End -->

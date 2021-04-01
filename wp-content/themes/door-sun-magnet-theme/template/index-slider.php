@@ -1,67 +1,60 @@
 <!-- Slider Start -->
+<?php
+$top_slider = doorSun_get_option( "doorsun_slider_group" );
+?>
 <section id="slider">
     <div class="slider">
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
+				<?php
+				$i = 0;
+				foreach ( $top_slider as $item ) {
+					if ( $i == 0 ) {
+						echo "<li data-target='#myCarousel' data-slide-to='{$i}' class='active'></li>";
+					} else {
+						echo "<li data-target='#myCarousel' data-slide-to='{$i}' ></li>";
+					}
+					$i ++;
+				}
+				?>
             </ol>
             <div class="container">
                 <div class="row">
                     <div class="carousel-inner" role="listbox">
-                        <div class="item active">
-                            <div class="col-md-6">
-                                <img src="<?php echo DS_TDU ?>/images/slider/home1-slider1.png" class="img-responsive" alt="">
-                            </div>
-                            <div class="col-md-6">
-                                <div class="slide-content">
-                                    <h1>لپ تاپ اپل</h1>
-                                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
-                                        گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و
-                                        برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای
-                                        کاربردی می باشد</p>
-                                    <a href="#" class="btn btn-gray shadow-around">افزودن به سبد خرید</a>
-                                    <a href="#" class="btn btn-blue shadow-around">۲.۵۰۰.۰۰۰ تومان</a>
-                                </div>
-                            </div>
+						<?php
+						$i = 0;
+						foreach ( $top_slider
+
+						as $item )
+						{
+						if ( $i == 0 ) {
+							echo "<div class=\"item active\">";
+						} else {
+							echo "<div class=\"item\">";
+						}
+						?>
+                        <div class="col-md-6">
+                            <img src="<?php echo $item['image']; ?>" class="img-responsive" alt="">
                         </div>
-                        <div class="item">
-                            <div class="col-md-6">
-                                <img src="<?php echo DS_TDU ?>/images/slider/home1-slider2.png" class="img-responsive" alt="">
-                            </div>
-                            <div class="col-md-6">
-                                <div class="slide-content">
-                                    <h1>لپ تاپ اپل</h1>
-                                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
-                                        گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و
-                                        برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای
-                                        کاربردی می باشد</p>
-                                    <a href="#" class="btn btn-gray shadow-around">افزودن به سبد خرید</a>
-                                    <a href="#" class="btn btn-blue shadow-around">۲.۵۰۰.۰۰۰ تومان</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="col-md-6">
-                                <img src="<?php echo DS_TDU ?>/images/slider/home1-slider3.png" class="img-responsive" alt="">
-                            </div>
-                            <div class="col-md-6">
-                                <div class="slide-content">
-                                    <h1>لپ تاپ اپل</h1>
-                                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
-                                        گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و
-                                        برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای
-                                        کاربردی می باشد</p>
-                                    <a href="#" class="btn btn-gray shadow-around">افزودن به سبد خرید</a>
-                                    <a href="#" class="btn btn-blue shadow-around">۲.۵۰۰.۰۰۰ تومان</a>
-                                </div>
+                        <div class="col-md-6">
+                            <div class="slide-content">
+                                <h1><?php echo $item['title']; ?></h1>
+                                <p><?php echo $item['desc']; ?></p>
+                                <a href="<?php echo @$item['first_button_link']; ?>"
+                                   class="btn btn-gray shadow-around"><?php echo $item['first_button']; ?></a>
+                                <a href="<?php echo @$item['second_button_link']; ?>"
+                                   class="btn btn-blue shadow-around"><?php echo $item['second_button']; ?></a>
                             </div>
                         </div>
                     </div>
+					<?php
+					$i ++;
+					}
+					?>
                 </div>
             </div>
         </div>
+    </div>
     </div>
 </section>
 <div class="clearfix"></div>

@@ -43,6 +43,10 @@ function doorSun_register_theme_options_metabox() {
 	 * Prefix is not needed.
 	 */
 
+
+
+
+	// Set our CMB2 fields
 	$group_field_id = $cmb_options->add_field( array(
 		'id'          => 'header_sec',
 		'type'        => 'group',
@@ -67,6 +71,201 @@ function doorSun_register_theme_options_metabox() {
 		),
 		'text'    => array(
 			'add_upload_file_text' => 'آپلود فایل' // Change upload button text. Default: "Add or Upload File"
+		),
+	) );
+
+	// social
+	$doorsun_social_group = $cmb_options->add_field( array(
+		'id'          => 'doorsun_social_group',
+		'type'        => 'group',
+		'description' => '',
+		'repeatable'  => false, // use false if you want non-repeatable group
+		'options'     => array(
+			'group_title'   => "شبکه های اجتماعی",
+		),
+	) );
+
+	$cmb_options->add_group_field( $doorsun_social_group, array(
+		'name' => 'فیسبوک',
+		'id'   => 'facebook',
+		'type' => 'text_url',
+	) );
+
+	$cmb_options->add_group_field( $doorsun_social_group, array(
+		'name' => 'توییتر',
+		'id'   => 'twitter',
+		'type' => 'text_url',
+	) );
+
+	$cmb_options->add_group_field( $doorsun_social_group, array(
+		'name' => 'اینستاگرام',
+		'id'   => 'instagram',
+		'type' => 'text_url',
+	) );
+
+	$cmb_options->add_group_field( $doorsun_social_group, array(
+		'name' => 'تلگرام',
+		'id'   => 'telegram',
+		'type' => 'text_url',
+	) );
+
+
+
+
+	// index slider
+
+	$cmb_options->add_field( array(
+		'name' => 'اسلایدر صفحه اصلی',
+		'type' => 'title',
+		'id'   => 'doorsun_slider'
+	) );
+
+	$doorsun_slider_group = $cmb_options->add_field( array(
+		'id'          => 'doorsun_slider_group',
+		'type'        => 'group',
+		'description' => '',
+		'repeatable'  => true,
+		'options'     => array(
+			'group_title'   => "اسلایدر صفحه اصلی {#}",
+			'add_button'    => "افزودن اسلایدر جدید",
+			'remove_button' => "حذف اسلاید",
+			'sortable'      => true, // beta
+		),
+	) );
+
+	$cmb_options->add_group_field( $doorsun_slider_group, array(
+		'name' => 'عنوان',
+		'id'   => 'title',
+		'type' => 'text',
+	) );
+
+	$cmb_options->add_group_field( $doorsun_slider_group, array(
+		'name' => 'توضیح',
+		'id'   => 'desc',
+		'type' => 'textarea_small',
+	) );
+
+	$cmb_options->add_group_field( $doorsun_slider_group, array(
+		'name' => 'متن دکمه چپ',
+		'id'   => 'first_button',
+		'type' => 'text',
+	) );
+
+	$cmb_options->add_group_field( $doorsun_slider_group, array(
+		'name' => 'لینک دکمه چپ',
+		'id'   => 'first_button_link',
+		'type' => 'text_url',
+	) );
+
+	$cmb_options->add_group_field( $doorsun_slider_group, array(
+		'name' => 'متن دکمه راست',
+		'id'   => 'second_button',
+		'type' => 'text',
+	) );
+
+	$cmb_options->add_group_field( $doorsun_slider_group, array(
+		'name' => 'لینک دکمه راست',
+		'id'   => 'second_button_link',
+		'type' => 'text_url',
+	) );
+
+	$cmb_options->add_group_field( $doorsun_slider_group, array(
+		'name' => 'عکس اسلاید',
+		'id'   => 'image',
+		'type' => 'file',
+		// Optional:
+		'options' => array(
+			'url' => false, // Hide the text input for the url
+		),
+		'text'    => array(
+			'add_upload_file_text' => 'انتخاب عکس' // Change upload button text. Default: "Add or Upload File"
+		),
+	) );
+
+	// index support section
+
+	$cmb_options->add_field( array(
+		'name' => 'بخش سرویس های صفحه اصلی',
+		'type' => 'title',
+		'id'   => 'woolearn_services'
+	) );
+
+	$doorsun_service_group = $cmb_options->add_field( array(
+		'id'          => 'doorsun_service_group',
+		'type'        => 'group',
+		'description' => '',
+		'repeatable'  => true,
+		'options'     => array(
+			'group_title'   => "آیتم {#}",
+			'add_button'    => "افزودن آیتم جدید",
+			'remove_button' => "حذف آیتم",
+			'sortable'      => true, // beta
+		),
+	) );
+
+	$cmb_options->add_group_field( $doorsun_service_group, array(
+		'name' => 'عنوان',
+		'id'   => 'title',
+		'type' => 'text',
+	) );
+
+	$cmb_options->add_group_field( $doorsun_service_group, array(
+		'name' => 'زیرعنوان',
+		'id'   => 'subtitle',
+		'type' => 'text',
+	) );
+
+	$cmb_options->add_group_field( $doorsun_service_group, array(
+		'name' => 'نام آیکون',
+		'id'   => 'fa_icon',
+		'desc' =>'<a target="_balnk" href="http://fontawesome.io/3.2.1/icons/">انتخاب آیکون</a>',
+		'type' => 'text',
+	) );
+
+
+	// index customer section
+
+	$cmb_options->add_field( array(
+		'name' => 'نظر مشتری',
+		'type' => 'title',
+		'id'   => 'doorsun_customer'
+	) );
+
+	$doorsun_customer_group = $cmb_options->add_field( array(
+		'id'          => 'doorsun_customer_group',
+		'type'        => 'group',
+		'description' => '',
+		'repeatable'  => true,
+		'options'     => array(
+			'group_title'   => "آیتم {#}",
+			'add_button'    => "افزودن آیتم جدید",
+			'remove_button' => "حذف آیتم",
+			'sortable'      => true, // beta
+		),
+	) );
+
+	$cmb_options->add_group_field( $doorsun_customer_group, array(
+		'name' => 'توضیح',
+		'id'   => 'desc',
+		'type' => 'textarea_small',
+	) );
+
+	$cmb_options->add_group_field( $doorsun_customer_group, array(
+		'name' => 'نام',
+		'id'   => 'name',
+		'type' => 'text',
+	) );
+
+	$cmb_options->add_group_field( $doorsun_customer_group, array(
+		'name' => 'عکس',
+		'id'   => 'image',
+		'type' => 'file',
+		// Optional:
+		'options' => array(
+			'url' => false, // Hide the text input for the url
+		),
+		'text'    => array(
+			'add_upload_file_text' => 'انتخاب عکس' // Change upload button text. Default: "Add or Upload File"
 		),
 	) );
 

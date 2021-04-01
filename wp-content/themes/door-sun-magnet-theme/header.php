@@ -107,10 +107,22 @@
         <div class="header-bottom shadow-around">
             <div class="col-md-6">
                 <ul class="social">
-                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                    <li><a href="#"><i class="fa fa-send"></i></a></li>
-                    <li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
+	                <?php
+	                $social = doorSun_get_option("doorsun_social_group");
+	                $social = $social[0];
+	                if(isset($social['facebook'])){
+		                echo "<li><a href='{$social['facebook']}'><i class=\"fa fa-facebook\"></i></a></li>";
+	                }
+	                if(isset($social['twitter'])){
+		                echo "<li><a href='{$social['twitter']}'><i class=\"fa fa-twitter\"></i></a></li>";
+	                }
+	                if(isset($social['instagram'])){
+		                echo "<li><a href='{$social['instagram']}'><i class=\"fa fa-instagram\"></i></a></li>";
+	                }
+	                if(isset($social['telegram'])){
+		                echo "<li><a href='{$social['telegram']}'><i class=\"fa fa-send\"></i></a></li>";
+	                }
+	                ?>
                 </ul>
             </div>
             <div class="col-md-6">
