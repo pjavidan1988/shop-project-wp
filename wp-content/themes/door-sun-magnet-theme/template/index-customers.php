@@ -1,55 +1,59 @@
 <!--Customers Start-->
+<?php
+$doorsun_customers = doorSun_get_option( "doorsun_customer_group" );
+?>
 <section id="customers">
     <div class="customers">
         <div class="container">
             <div class="row">
                 <div id="myCarousel-fifth" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
-                        <li data-target="#myCarousel-fifth" data-slide-to="0" class="active"></li>
-                        <li data-target="#myCarousel-fifth" data-slide-to="1"></li>
+						<?php
+						$i = 0;
+						foreach ( $doorsun_customers as $customer ) {
+							if ( $i == 0 ) {
+								echo '<li data-target="#myCarousel-fifth" data-slide-to="0" class="active"></li>';
+							} else {
+								echo "<li data-target=\"#myCarousel-fifth\" data-slide-to=\"{$i}\"></li>";
+							}
+							$i ++;
+						}
+						?>
                     </ol>
                     <div class="carousel-inner" role="listbox">
-                        <div class="item active">
-                            <div class="col-md-6 col-md-offset-3">
-                                <div class="customers-item">
-                                    <div class="customers-thumb">
-                                        <img src="<?php echo DS_TDU ?>/images/peyman.png" alt="" class="shadow-around">
-                                    </div>
-                                    <div class="customers-content">
-                                        <p>
-                                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
-                                            طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که
-                                            لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود
-                                            ابزارهای کاربردی می باشد
-                                        </p>
-                                    </div>
-                                    <div class="customers-title">
-                                        <span>پیمان جاویدان</span>
-                                    </div>
+						<?php
+						$i = 0;
+						foreach ( $doorsun_customers as $customer ) {
+						if ( $i == 0 ) {
+							echo '<div class="item active">';
+						} else {
+							echo '<div class="item">';
+						}
+						?>
+                        <div class="col-md-6 col-md-offset-3">
+                            <div class="customers-item">
+                                <div class="customers-thumb">
+									<?php
+									$image_id = $customer['image_id'];
+									$image    = wp_get_attachment_image_src( $image_id, 'thumbnail' );
+									?>
+                                    <img src="<?php echo $image[0]; ?>" alt="" class="shadow-around">
                                 </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="col-md-6 col-md-offset-3">
-                                <div class="customers-item">
-                                    <div class="customers-thumb">
-                                        <img src="<?php echo DS_TDU ?>/images/peyman.png" alt="" class="shadow-around">
-                                    </div>
-                                    <div class="customers-content">
-                                        <p>
-                                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
-                                            طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که
-                                            لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود
-                                            ابزارهای کاربردی می باشد
-                                        </p>
-                                    </div>
-                                    <div class="customers-title">
-                                        <span>پیمان جاویدان</span>
-                                    </div>
+                                <div class="customers-content">
+                                    <p>
+										<?php echo $customer['desc']; ?>
+                                    </p>
+                                </div>
+                                <div class="customers-title">
+                                    <span><?php echo $customer['name']; ?></span>
                                 </div>
                             </div>
                         </div>
                     </div>
+					<?php
+					$i ++;
+					}
+					?>
                 </div>
             </div>
         </div>

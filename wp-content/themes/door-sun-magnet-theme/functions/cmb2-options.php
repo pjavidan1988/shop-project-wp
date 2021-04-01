@@ -187,7 +187,7 @@ function doorSun_register_theme_options_metabox() {
 	$cmb_options->add_field( array(
 		'name' => 'بخش سرویس های صفحه اصلی',
 		'type' => 'title',
-		'id'   => 'woolearn_services'
+		'id'   => 'doorsun_services'
 	) );
 
 	$doorsun_service_group = $cmb_options->add_field( array(
