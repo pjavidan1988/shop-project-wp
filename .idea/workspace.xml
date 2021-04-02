@@ -2,13 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1627bfc0-c08f-46eb-bad1-2b53c1d901d4" name="Default Changelist" comment="update fun, header, footer">
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2021/04/peyman-150x150.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2021/04/peyman-300x269.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2021/04/peyman.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2021/04/user.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2021/04/1-1024x683.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2021/04/1-150x150.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2021/04/1-1536x1024.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2021/04/1-300x200.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2021/04/1-768x512.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2021/04/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2021/04/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2021/04/2-1024x683.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2021/04/2-150x150.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2021/04/2-1536x1024.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2021/04/2-300x200.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2021/04/2-768x512.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2021/04/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2021/04/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2021/04/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2021/04/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2021/04/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2021/04/6.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/door-sun-magnet-theme/functions/cmb2-options.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/door-sun-magnet-theme/functions/cmb2-options.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/door-sun-magnet-theme/template/index-customers.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/door-sun-magnet-theme/template/index-customers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/door-sun-magnet-theme/template/index-ads.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/door-sun-magnet-theme/template/index-ads.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/door-sun-magnet-theme/template/index-support.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/door-sun-magnet-theme/template/index-support.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +76,7 @@
       <workItem from="1617082420788" duration="8943000" />
       <workItem from="1617109520609" duration="955000" />
       <workItem from="1617169741456" duration="12767000" />
-      <workItem from="1617255691924" duration="11103000" />
+      <workItem from="1617255691924" duration="12799000" />
     </task>
     <servers />
   </component>

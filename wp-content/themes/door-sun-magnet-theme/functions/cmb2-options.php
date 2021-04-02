@@ -269,6 +269,92 @@ function doorSun_register_theme_options_metabox() {
 		),
 	) );
 
+	// index ads section
+
+	$cmb_options->add_field( array(
+		'name' => 'تبلیغات صفحه اصلی',
+		'type' => 'title',
+		'id'   => 'doorsun_ads'
+	) );
+
+	$doorsun_ads_group = $cmb_options->add_field( array(
+		'id'          => 'doorsun_ads_group',
+		'type'        => 'group',
+		'description' => '',
+		'repeatable'  => true,
+		'options'     => array(
+			'group_title'   => "آیتم {#}",
+			'add_button'    => "افزودن آیتم جدید",
+			'remove_button' => "حذف آیتم",
+			'sortable'      => true, // beta
+		),
+	) );
+
+	$cmb_options->add_group_field( $doorsun_ads_group, array(
+		'name' => 'عنوان تبلیغ',
+		'id'   => 'title',
+		'type' => 'text',
+	) );
+
+	$cmb_options->add_group_field( $doorsun_ads_group, array(
+		'name' => 'لینک تبلیغ',
+		'id'   => 'link',
+		'type' => 'text_url',
+	) );
+
+	$cmb_options->add_group_field( $doorsun_ads_group, array(
+		'name' => 'عکس تبلیغ',
+		'id'   => 'image',
+		'type' => 'file',
+		// Optional:
+		'options' => array(
+			'url' => false, // Hide the text input for the url
+		),
+		'text'    => array(
+			'add_upload_file_text' => 'انتخاب عکس' // Change upload button text. Default: "Add or Upload File"
+		),
+	) );
+
+	// index support section
+
+	$cmb_options->add_field( array(
+		'name' => 'پشتیبان ها',
+		'type' => 'title',
+		'id'   => 'doorsun_support'
+	) );
+
+	$doorsun_support_group = $cmb_options->add_field( array(
+		'id'          => 'doorsun_support_group',
+		'type'        => 'group',
+		'description' => '',
+		'repeatable'  => true,
+		'options'     => array(
+			'group_title'   => "آیتم {#}",
+			'add_button'    => "افزودن آیتم جدید",
+			'remove_button' => "حذف آیتم",
+			'sortable'      => true, // beta
+		),
+	) );
+
+	$cmb_options->add_group_field( $doorsun_support_group, array(
+		'name' => 'لینک',
+		'id'   => 'link',
+		'type' => 'text_url',
+	) );
+
+	$cmb_options->add_group_field( $doorsun_support_group, array(
+		'name' => 'عکس',
+		'id'   => 'image',
+		'type' => 'file',
+		// Optional:
+		'options' => array(
+			'url' => false, // Hide the text input for the url
+		),
+		'text'    => array(
+			'add_upload_file_text' => 'انتخاب عکس' // Change upload button text. Default: "Add or Upload File"
+		),
+	) );
+
 }
 
 /**
