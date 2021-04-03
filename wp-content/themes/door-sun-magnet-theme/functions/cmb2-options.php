@@ -355,6 +355,49 @@ function doorSun_register_theme_options_metabox() {
 		),
 	) );
 
+	// Pre order section
+
+	$doorsun_preorder_group = $cmb_options->add_field( array(
+		'id'          => 'doorsun_preorder_group',
+		'type'        => 'group',
+		'description' => '',
+		'repeatable'  => false,
+		'options'     => array(
+			'group_title'   => "پیش سفارش",
+		),
+	) );
+
+	$cmb_options->add_group_field( $doorsun_preorder_group, array(
+		'name' => 'عنوان پیش سفارش',
+		'id'   => 'title',
+		'type' => 'text',
+	) );
+
+	$cmb_options->add_group_field( $doorsun_preorder_group, array(
+		'name' => 'متن پیش سفارش',
+		'id'   => 'desc',
+		'type' => 'textarea_small',
+	) );
+
+	$cmb_options->add_group_field( $doorsun_preorder_group, array(
+		'name' => 'Contact Shortcode',
+		'id'   => 'contact_form',
+		'type' => 'text',
+	) );
+
+	$cmb_options->add_group_field( $doorsun_preorder_group, array(
+		'name' => 'عکس',
+		'id'   => 'image',
+		'type' => 'file',
+		// Optional:
+		'options' => array(
+			'url' => false, // Hide the text input for the url
+		),
+		'text'    => array(
+			'add_upload_file_text' => 'انتخاب عکس' // Change upload button text. Default: "Add or Upload File"
+		),
+	) );
+
 }
 
 /**
