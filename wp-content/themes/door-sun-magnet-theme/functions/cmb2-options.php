@@ -398,6 +398,151 @@ function doorSun_register_theme_options_metabox() {
 		),
 	) );
 
+
+
+
+	// index middle slider
+
+	$cmb_options->add_field( array(
+		'name' => 'اسلایدر وسط صفحه',
+		'type' => 'title',
+		'id'   => 'doorsun_slider_middle'
+	) );
+
+	$doorsun_slider_middle_group = $cmb_options->add_field( array(
+		'id'          => 'doorsun_slider_middle_group',
+		'type'        => 'group',
+		'description' => '',
+		'repeatable'  => true,
+		'options'     => array(
+			'group_title'   => "اسلایدر وسط صفحه {#}",
+			'add_button'    => "افزودن اسلایدر جدید",
+			'remove_button' => "حذف اسلاید",
+			'sortable'      => true, // beta
+		),
+	) );
+
+	$cmb_options->add_group_field( $doorsun_slider_middle_group, array(
+		'name' => 'عنوان',
+		'id'   => 'title1',
+		'type' => 'text',
+	) );
+
+	$cmb_options->add_group_field( $doorsun_slider_middle_group, array(
+		'name' => 'توضیح',
+		'id'   => 'desc1',
+		'type' => 'textarea_small',
+	) );
+
+	$cmb_options->add_group_field( $doorsun_slider_middle_group, array(
+		'name' => 'متن دکمه راست',
+		'id'   => 'first_button1',
+		'type' => 'text',
+	) );
+
+	$cmb_options->add_group_field( $doorsun_slider_middle_group, array(
+		'name' => 'لینک دکمه راست',
+		'id'   => 'first_button_link1',
+		'type' => 'text_url',
+	) );
+
+	$cmb_options->add_group_field( $doorsun_slider_middle_group, array(
+		'name' => 'متن دکمه چپ',
+		'id'   => 'second_button1',
+		'type' => 'text',
+	) );
+
+	$cmb_options->add_group_field( $doorsun_slider_middle_group, array(
+		'name' => 'لینک دکمه چپ',
+		'id'   => 'second_button_link1',
+		'type' => 'text_url',
+	) );
+
+	$cmb_options->add_group_field( $doorsun_slider_middle_group, array(
+		'name' => 'عکس اسلاید',
+		'id'   => 'image1',
+		'type' => 'file',
+		// Optional:
+		'options' => array(
+			'url' => false, // Hide the text input for the url
+		),
+		'text'    => array(
+			'add_upload_file_text' => 'انتخاب عکس' // Change upload button text. Default: "Add or Upload File"
+		),
+	) );
+
+
+
+	//product 2
+	$cmb_options->add_group_field( $doorsun_slider_middle_group, array(
+		'name' => 'عنوان',
+		'id'   => 'title2',
+		'type' => 'text',
+	) );
+
+	$cmb_options->add_group_field( $doorsun_slider_middle_group, array(
+		'name' => 'توضیح',
+		'id'   => 'desc2',
+		'type' => 'textarea_small',
+	) );
+
+	$cmb_options->add_group_field( $doorsun_slider_middle_group, array(
+		'name' => 'متن دکمه راست',
+		'id'   => 'first_button2',
+		'type' => 'text',
+	) );
+
+	$cmb_options->add_group_field( $doorsun_slider_middle_group, array(
+		'name' => 'لینک دکمه راست',
+		'id'   => 'first_button_link2',
+		'type' => 'text_url',
+	) );
+
+	$cmb_options->add_group_field( $doorsun_slider_middle_group, array(
+		'name' => 'متن دکمه چپ',
+		'id'   => 'second_button2',
+		'type' => 'text',
+	) );
+
+	$cmb_options->add_group_field( $doorsun_slider_middle_group, array(
+		'name' => 'لینک دکمه چپ',
+		'id'   => 'second_button_link2',
+		'type' => 'text_url',
+	) );
+
+	$cmb_options->add_group_field( $doorsun_slider_middle_group, array(
+		'name' => 'عکس اسلاید',
+		'id'   => 'image2',
+		'type' => 'file',
+		// Optional:
+		'options' => array(
+			'url' => false, // Hide the text input for the url
+		),
+		'text'    => array(
+			'add_upload_file_text' => 'انتخاب عکس' // Change upload button text. Default: "Add or Upload File"
+		),
+	) );
+
+
+
+
+	//footer
+	$doorsun_footer_group = $cmb_options->add_field( array(
+		'id'          => 'doorsun_footer_group',
+		'type'        => 'group',
+		'description' => '',
+		'repeatable'  => false,
+		'options'     => array(
+			'group_title'   => "فوتر",
+		),
+	) );
+
+	$cmb_options->add_group_field( $doorsun_footer_group, array(
+		'name' => 'کپی رایت',
+		'id'   => 'copy',
+		'type' => 'text',
+	) );
+
 }
 
 /**

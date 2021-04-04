@@ -1477,10 +1477,12 @@ input[type=file]:focus,input[type=checkbox]:focus,input[type=radio]:focus {
     position: relative;
 }
 
-.newsletter i {
-    position: relative;
-    top: 0;
-    right: 40px;
+.newsletter form:before{
+    content: "\f0e0";
+    font-family: "FontAwesome";
+    position: absolute;
+    top: 43px;
+    right: 30px;
 }
 
 .newsletter input[type="text"] {
@@ -1515,7 +1517,19 @@ input[type=file]:focus,input[type=checkbox]:focus,input[type=radio]:focus {
 }
 
 .newsletter p {
-    padding: 20px 0;
+    padding: 20px 0 0;
+}
+
+.formError .formErrorContent{
+    background: #E74C3C !important;
+    border: 0 !important;
+    color: #fff !important;
+    line-height: 25px;
+}
+
+.allmsgs{
+    width: 320px;
+    margin: 0 auto;
 }
 /*Newsletter End*/
 

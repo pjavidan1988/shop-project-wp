@@ -45,6 +45,16 @@ function doorSunWidgetsInit()
 		'after_title'=>'</h4>',
 
 	));
+
+	register_sidebar(array(
+		'name'=>'خبرنامه',
+		'id'=>'wg_news',
+		'before_widget'=>'',
+		'after_widget'=>'',
+		'before_title'=>'',
+		'after_title'=>'',
+	));
+
 }
 add_action('widgets_init', 'doorSunWidgetsInit');
 require_once dirname( __FILE__ ) . '/cmb2/init.php';
