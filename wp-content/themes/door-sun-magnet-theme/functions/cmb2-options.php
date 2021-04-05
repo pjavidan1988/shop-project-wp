@@ -543,6 +543,68 @@ function doorSun_register_theme_options_metabox() {
 		'type' => 'text',
 	) );
 
+
+
+	// index Offer section
+	$doorsun_offer_group = $cmb_options->add_field( array(
+		'id'          => 'doorsun_offer_group',
+		'type'        => 'group',
+		'description' => '',
+		'repeatable'  => false, // use false if you want non-repeatable group
+		'options'     => array(
+			'group_title'   => "بخش پیشنهاد شگفت انگیز",
+		),
+	) );
+
+	$cmb_options->add_group_field( $doorsun_offer_group, array(
+		'name' => 'عنوان',
+		'id'   => 'title',
+		'type' => 'text',
+	) );
+
+	$cmb_options->add_group_field( $doorsun_offer_group, array(
+		'name' => 'زیر عنوان',
+		'id'   => 'subtitle',
+		'type' => 'text',
+	) );
+
+	$cmb_options->add_group_field( $doorsun_offer_group, array(
+		'name' => 'تاریخ شروع پیشنهاد ویژه',
+		'id'   => 'start_timestamp',
+		'type' => 'text_datetime_timestamp',
+	) );
+	$cmb_options->add_group_field( $doorsun_offer_group, array(
+		'name' => 'مدت',
+		'id'   => 'duration',
+		'type' => 'text_small',
+		'desc' => 'min',
+	) );
+
+	$cmb_options->add_group_field( $doorsun_offer_group, array(
+		'name' => 'عنوان لینک دکمه',
+		'id'   => 'button_text',
+		'type' => 'text',
+	) );
+
+	$cmb_options->add_group_field( $doorsun_offer_group, array(
+		'name' => 'آدرس لینک دکمه',
+		'id'   => 'button_link',
+		'type' => 'text_url',
+	) );
+
+	$cmb_options->add_group_field( $doorsun_offer_group, array(
+		'name' => 'عکس',
+		'id'   => 'image',
+		'type' => 'file',
+		// Optional:
+		'options' => array(
+			'url' => false, // Hide the text input for the url
+		),
+		'text'    => array(
+			'add_upload_file_text' => 'انتخاب عکس' // Change upload button text. Default: "Add or Upload File"
+		),
+	) );
+
 }
 
 /**
