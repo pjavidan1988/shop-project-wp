@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1627bfc0-c08f-46eb-bad1-2b53c1d901d4" name="Default Changelist" comment="update fun, header, footer">
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/plugins/upload-max-file-size" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/upload-max-file-size" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/plugins/upload-max-file-size/.distignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/plugins/upload-max-file-size/.github/workflows/deploy-tag.yml" beforeDir="false" />
@@ -85,6 +86,7 @@
       <workItem from="1617514909954" duration="5927000" />
       <workItem from="1617536623053" duration="1930000" />
       <workItem from="1617609581271" duration="333000" />
+      <workItem from="1617709032342" duration="355000" />
     </task>
     <servers />
   </component>
